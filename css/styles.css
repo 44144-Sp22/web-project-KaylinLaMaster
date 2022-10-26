@@ -1,0 +1,319 @@
+/*
+Author: Kaylin LaMaster
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 1%;
+    border: 0;
+}
+
+body {
+  background: linear-gradient(to right, #140c52, #9ea5ba);
+}
+
+/* Style rules for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
+/* Style rule for header */
+header {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   background: linear-gradient(to right, #140c52, #9ea5ba);
+}
+
+#image {
+    margin: 1em 5em 1em 5em;
+}
+
+header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    text-align:center;
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style rules for navigation area */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+    background: linear-gradient(to right, #140c52, #9ea5ba);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav li {
+    font-size: 1.5em;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    background: linear-gradient(to right, #140c52, #9ea5ba);
+    padding: 2%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about-me {
+    color: #fff;
+    font-size: 1.25em;
+    margin: 1em 3em 1em 3em;
+}
+
+#about-me h2 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#about-me p {
+    text-align: justify;
+}
+
+#northwest {
+    display: block;
+    background-color: #fff;
+    padding: 1% 2%;
+}
+
+#northwest img {
+    display: block;
+    margin: 1em 5em 1em 10em;
+}
+
+#northwest h2 {
+    text-align: center;
+    color: #9ea5ba;
+}
+
+#northwest dt {
+    padding-bottom: 1em;
+    font-weight: bolder;
+    font-size: 1.15em;
+}
+
+#northwest dd {
+    font-family: 'Roboto', sans-serif;
+}
+
+#taco-johns {
+    display: block;
+    background-color: #fff;
+    padding: 1% 2%;
+    border-top: 1px solid #000;
+}
+
+#taco-johns img {
+    display: block;
+    margin: 1em 5em 1em 10em;
+}
+
+#taco-johns h3 {
+    text-align: center;
+    color: #9ea5ba;
+}
+
+#taco-johns dt {
+    padding-bottom: 1em;
+    font-weight: bolder;
+    font-size: 1.15em;
+}
+#taco-johns dd {
+    font-family: 'Roboto', sans-serif;
+}
+
+#south-nodaway {
+    display: block;
+    background-color: #fff;
+    padding: 1% 2%;
+    border-top: 1px solid #000;
+}
+
+#south-nodaway img {
+    display: block;
+    margin: 1em 5em 1em 10em;
+}
+
+#south-nodaway h4 {
+    text-align: center;
+    color: #9ea5ba;
+}
+
+#south-nodaway dt {
+    padding-bottom: 1em;
+    font-weight: bolder;
+    font-size: 1.15em;
+}
+#south-nodaway dd {
+    font-family: 'Roboto', sans-serif;
+}
+
+.action {
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+#teamwork {
+    display: block;
+    background-color: #fff;
+    padding: 2% 2%;
+}
+
+#teamwork img {
+    max-width: 100%;
+    margin: -0.5em;
+    border: 1px solid #000;
+}
+
+#communication {
+    display: block;
+    background-color: #fff;
+    padding: 2% 2%;
+}
+
+#communication img {
+    max-width: 100%;
+    margin: -0.5em;
+    border: 1px solid #000;
+}
+
+#organization {
+    display: block;
+    background-color: #fff;
+    padding: 2% 2%;
+}
+
+#organization img {
+    max-width: 100%;
+    margin: -0.5em;
+    border: 1px solid #000;
+}
+
+#contact {
+    text-align: center;
+    color: #fff;
+    clear:both;
+}
+
+/* Style for footer content */
+footer {
+    clear: both;
+}
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+    margin: 1em 3em 1em 3em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:769px) {
+
+    /* Desktop Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    /* Desktop Viewport: Styler rule for header */
+     header {
+        float: left;
+        width: 40%;
+        background: none;
+        position: static;
+    }
+
+    /* Desktop Viewport: Style for nav area */
+    nav {
+        float: right;
+        margin: 0;
+        width: 70%;
+        background: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        text-align: right;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.75em;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+
+    #image {
+        margin: 1em 13em 1em 13em;
+    }
+
+    #about-me {
+        text-align: left;
+    }
+
+    #northwest, #taco-johns, #south-nodaway {
+        width: 25%;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #northwest img, #taco-johns img, #south-nodaway img {
+        margin: 0;
+    }
+
+    #teamwork, #communication, #organization {
+        width: 25%;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+}
